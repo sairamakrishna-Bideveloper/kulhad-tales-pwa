@@ -1,0 +1,15 @@
+{
+  "name": "KULHAD TALES — Chai, Food & Good Company",
+  "short_name": "KULHAD TALES",
+  "description": "KULHAD TALES café concept — chai, coffee, food and good company in Khammam.",
+  "start_url": "./index.html#home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5efe6",
+  "theme_color": "#6b3f28",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src":"logo.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
