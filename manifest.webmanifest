@@ -1,15 +1,44 @@
 {
-  "name": "KULHAD TALES — Chai, Food & Good Company",
-  "short_name": "KULHAD TALES",
-  "description": "KULHAD TALES café concept — chai, coffee, food and good company in Khammam.",
-  "start_url": "./index.html#home",
+  "name": "KULHAD TALES",
+  "short_name": "KULHAD",
+  "description": "KULHAD TALES \u2014 Chai, food and good company.",
+  "start_url": "./index.html",
   "scope": "./",
+  "id": "./",
   "display": "standalone",
-  "background_color": "#f5efe6",
-  "theme_color": "#6b3f28",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "portrait-primary",
+  "theme_color": "#5a321f",
+  "background_color": "#f6efe4",
   "icons": [
-    {"src":"logo.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
-    {"src":"logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Order Online",
+      "short_name": "Order",
+      "url": "./index.html#order",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }
