@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KULHAD TALES — Chai, Food & Good Company</title>
   <meta name="description" content="KULHAD TALES — a warm café experience in Mamillagudem, Khammam. Chai, coffee, coolers, bites and conversations.">
-  <meta name="theme-color" content="#2a160e">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="theme-color" content="#5a321f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="KULHAD TALES">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon-192.png" sizes="192x192">
 </head>
 <body>
   <div class="announcement">GOOD CHAI. BRIGHTER CONVERSATIONS. <span>•</span> MAMILLAGUDEM, KHAMMAM</div>
@@ -191,5 +199,13 @@
   <a class="whatsapp" href="https://wa.me/918297421197" target="_blank" rel="noopener" aria-label="WhatsApp KULHAD TALES">WA</a>
   <script src="script.js"></script>
 <script>if ("serviceWorker" in navigator) { window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {})); }</script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js", {scope:"./"}).catch(console.error);
+  });
+}
+</script>
 </body>
 </html>
